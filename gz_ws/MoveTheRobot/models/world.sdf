@@ -322,15 +322,16 @@
 
 <gui fullscreen='0'>
     <!-- 画面上のプラグイン設定群 -->
-    <plugin name='Video Recorder' filename='VideoRecorder'>
-      <gz-hq>
-        <property key="resizable" type="bool">false</property>
-        <property key="width" type="double">50</property>
-        <property key="height" type="double">50</property>
-        <property key="state" type="string">floating</property>
-        <property key="show_title_bar" type="bool">false</property>
-      </gz-hq>
-    </plugin>
+<plugin filename='ignition-gazebo-video-recorder-system' name='ignition::gazebo::systems::VideoRecorder'>
+    <ign-hq>
+      <property key="resizable" type="bool">false</property>
+      <property key="width" type="double">50</property>
+      <property key="height" type="double">50</property>
+      <property key="state" type="string">floating</property>
+      <property key="show_title_bar" type="bool">false</property>
+    </ign-hq>
+  </plugin>
+
   </gui>
 </world>
 </sdf>
